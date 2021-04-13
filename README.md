@@ -20,7 +20,7 @@ Clone the project
 * Create a file called env.json by using nano env.json or an editor of your choice
 Within this env.json file add the following
 {
-  "REACT_APP_GIPHY_API": "<Enter your gihpy api>"
+  "REACT_APP_GIPHY_API_KEY": "<Enter your gihpy api>"
 }
 * This is required in oder to successfully request data from the Giphy API, if not complete the application will not start as the reference within the application to the env.json file will fail to exist
 
