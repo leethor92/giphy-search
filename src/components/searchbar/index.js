@@ -4,9 +4,9 @@ export default class Index extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="row bg-warning">
+                <div className="row bg-primary">
                     <div className="col-md-12">
-                        <h4>
+                        <h4 class="text-center">
                             <input
                                 className="ui input search"
                                 type="text"
