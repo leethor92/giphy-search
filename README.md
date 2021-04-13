@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+#Setup.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone the project
 
-## Available Scripts
+* Open a terminal window and create a new folder mkdir <foldername>
+* Navigate into the newly created folder cd <foldername>
+* Clone the project git clone https://github.com/leethor92/giphy-search.git
+* The project folder react_poi should now be availble, run command ls to be sure.
+* Navigate into the react_poi folder by running command cd react_poi
+* You are now ready to complete the following steps in order to start the application successfully.
 
-In the project directory, you can run:
+#Run the application
 
-### `yarn start`
+* Open a new terminal window within the folder react_poi
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* install dependencies npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Navigate to the src folder react-poi>src by using the command cd src
 
-### `yarn test`
+* Create a file called env.json by using nano env.json or an editor of your choice
+Within this env.json file add the following
+{
+  "REACT_APP_GIPHY_API": "<Enter your gihpy api>"
+}
+* This is required in oder to successfully request data from the Giphy API, if not complete the application will not start as the reference within the application to the env.json file will fail to exist
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Before completing the next step ensure your are back in the giphy-react folder cd ..
 
-### `yarn build`
+* Once dependenices are installed and your api key has been added to the newly create env.json file run the application npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* The application should now be running on at the following address localhost:3000 -Do not close the terminal
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Testing
+* some basic unit tests were included. To run these type npm test in the cli.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
