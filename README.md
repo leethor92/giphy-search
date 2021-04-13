@@ -5,17 +5,17 @@ Clone the project
 * Open a terminal window and create a new folder mkdir <foldername>
 * Navigate into the newly created folder cd <foldername>
 * Clone the project git clone https://github.com/leethor92/giphy-search.git
-* The project folder react_poi should now be availble, run command ls to be sure.
-* Navigate into the react_poi folder by running command cd react_poi
+* The project folder giphy_search should now be available, run command ls to be sure.
+* Navigate into the giphy_search folder by running command cd giphy_search
 * You are now ready to complete the following steps in order to start the application successfully.
 
 #Run the application
 
-* Open a new terminal window within the folder react_poi
+* Open a new terminal window within the folder giphy_search
 
 * install dependencies npm install
 
-* Navigate to the src folder react-poi>src by using the command cd src
+* Navigate to the src folder giphy_search>src by using the command cd src
 
 * Create a file called env.json by using nano env.json or an editor of your choice
 Within this env.json file add the following
