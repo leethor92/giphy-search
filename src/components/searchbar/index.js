@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 
 export default class Index extends Component {
+    handleChange = (e, value) => {
+        e.preventDefault();
+        this.props.onTermChange(value);
+    };
+
+    handleTextChange = e => {
+        this.handleChange(e, e.target.value);
+    };
     render() {
         return (
             <div className="container-fluid">
@@ -11,13 +19,8 @@ export default class Index extends Component {
                                 className="ui input search"
                                 type="text"
                                 placeholder="Search for GIFS!!!"
+                                onChange={this.handleTextChange}
                             />
-                            <button
-                                type="submit"
-                                value="Click to start your search">
-                                Search
-                            </button>
-
                         </h4>
                     </div>
                 </div>
