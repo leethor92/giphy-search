@@ -4,10 +4,11 @@ import SearchBar from "./components/searchbar/";
 import GifList from "./components/gifList/";
 import Header from "./components/header/";
 import Random from "./components/random/";
+import Rating from "./components/rating/";
 import request from 'superagent';
 
 class App extends Component {
-    state = { term: "", gifs: [], randomGif: "" };
+    state = { term: "", gifs: [], randomGif: "", rating: "G" };
 
     componentDidMount() {
         this.getGifs();
@@ -23,9 +24,13 @@ class App extends Component {
         }
     };
 
+    rating = (rating) => {
+        this.setState({ rating: rating})
+    };
+
     handleTermChange = (term) => {
 
-        const url = `https://api.giphy.com/v1/gifs/search?q=${term}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}`;
+        const url = `https://api.giphy.com/v1/gifs/search?q=${term}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&rating=${this.state.rating}`;
 
         request.get(url, (err, res) => {
             this.setState({ gifs: res.body.data, randomGif: ""})
@@ -33,7 +38,7 @@ class App extends Component {
     };
 
     trending = () => {
-        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}`;
+           const url = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&rating=${this.state.rating}`;
 
         request.get(url, (err, res) => {
             this.setState({ gifs: res.body.data, randomGif: "" })
@@ -41,8 +46,8 @@ class App extends Component {
     };
 
     random = () => {
-        const url = `https://api.giphy.com/v1/gifs/random?api_key=${process.env.REACT_APP_GIPHY_API_KEY}`;
 
+        const url = `https://api.giphy.com/v1/gifs/random?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&rating=${this.state.rating}`;
         request.get(url, (err, res) => {
             this.setState({ gifs: [], randomGif: res.body.data.images.downsized.url})
         });
@@ -57,6 +62,7 @@ class App extends Component {
               getGifs={this.getGifs}
           />
           <Random random={this.random}/>
+          <Rating rating={this.rating}/>
           <GifList gifs={this.state.gifs} randomGif={this.state.randomGif} />
         </div>
     );
