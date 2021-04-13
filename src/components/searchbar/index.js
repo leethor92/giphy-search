@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Index extends Component {
     handleChange = (e, value) => {
         e.preventDefault();
-        this.props.onTermChange(value);
+        this.props.getGifs(value, 0);
     };
 
     handleTextChange = e => {
