@@ -6,8 +6,8 @@ class Index extends Component {
             <div className="col-sm-3">
                 <div className="card">
                     <img
-                        alt={this.props.gif.images.downsized.url}
-                        src={this.props.gif.images.downsized.url}
+                        alt="gif"
+                        src={this.props.url}
                     />
                 </div>
             </div>
