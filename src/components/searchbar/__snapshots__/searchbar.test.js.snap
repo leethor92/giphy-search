@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbar should render correctly in "debug" mode 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row bg-primary"
+  >
+    <div
+      className="col-md-12"
+    >
+      <h4
+        className="text-center"
+      >
+        <input
+          className="ui input search"
+          placeholder="Search for GIFS!!!"
+          type="text"
+        />
+        <button
+          type="submit"
+          value="Click to start your search"
+        >
+          Search
+        </button>
+      </h4>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifList should render correctly in mode 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <Index
+      gif={
+        Object {
+          "id": 1,
+        }
+      }
+      key="1"
+    />
+    <Index
+      gif={
+        Object {
+          "id": 2,
+        }
+      }
+      key="2"
+    />
+    <Index
+      gif={
+        Object {
+          "id": 3,
+        }
+      }
+      key="3"
+    />
+  </div>
+</div>
+`;

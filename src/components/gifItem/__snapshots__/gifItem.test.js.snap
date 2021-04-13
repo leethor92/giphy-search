@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifItem should render correctly in "debug" mode 1`] = `
+<div
+  className="col-sm-3"
+>
+  <div
+    className="card"
+  >
+    <img
+      alt={1}
+      className="card-img-tag center "
+      src={1}
+    />
+  </div>
+</div>
+`;

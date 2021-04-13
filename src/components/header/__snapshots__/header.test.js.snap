@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly in "debug" mode 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6 offset-4"
+    >
+      <div
+        className="page-header"
+      >
+        <h1>
+          Gif List 
+          <span
+            className="badge badge-pill badge-success"
+          />
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
