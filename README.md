@@ -1,4 +1,4 @@
-The app is deployed and available for viweing at https://serene-eyrie-87226.herokuapp.com/
+The app is deployed and available for viewing at https://serene-eyrie-87226.herokuapp.com/
 
 #Setup.
 
